@@ -1,0 +1,119 @@
+/*
+*************************************************************
+	CST336 Internet Programming
+	SP-A-2015
+	Instructor: Dr. Su Bude
+	Student: Clarence Mitchell
+*************************************************************
+*/
+
+.container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.container .navigation a {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+
+.image {
+	float: left;
+	width: 800px;
+	height: 150px;
+	box-shadow: 7px 7px 8px #333;
+}
+.image img { 
+	width: 800px;
+	height: 150px;
+}
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000;
+	float: left;
+	width: 800px;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+	padding-top: 10pt;
+	padding-bottom: 10pt;
+	border-top: medium solid #000;
+	border-bottom: medium solid #000;
+	clear: both;
+}
+.content h1, h2, h3 {text-align:center;
+	
+}
+.cancelledH1 {
+	color:#F00;
+}
+.updateH1
+{
+	color:#063;
+}
+table {
+	margin: 0 auto;
+	width: 600px;
+}
+td {
+	padding: 10px;
+	border: black 0px solid;
+}
+.dataTable{
+	margin: 0 auto;
+	width: 500px;
+	border: 1px solid black;
+
+}
+.trDTborder
+{
+	border: 1px solid black;
+}
+
+.tdRight{
+	text-align:right;
+	padding: 2px;
+
+}
+.tdLeft{
+	text-align:left;
+	padding: 2px;
+
+}
+
+.tdCenter{
+	text-align:center;
+	padding: 2px;
+}
+h2 {
+	text-align:center;
+}
+
+.resultHeader {
+	text-align: center;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#360;
+
+}
+.hiddenClass{
+visibility: hidden
+}
+
+.visibleClass{
+visibility: visible
+}
+
+.footer {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 8pt;
+	color: #333;
+	float: left;
+	width: 800px;
+}
+.footer img {
+	width: 480px;
+	height: 80px;
+}
+a img {
+	border-style: none;
+}

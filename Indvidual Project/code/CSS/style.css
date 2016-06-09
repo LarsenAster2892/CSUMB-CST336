@@ -1,0 +1,422 @@
+/*
+*************************************************************
+	CST336 Internet Programming
+	SP-A-2015
+	Instructor: Dr. Su Bude
+	Student: Clarence Mitchell
+*************************************************************
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*body {
+	background: #FFFFFF url(/_images/bkgrndbody.gif) repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #6E6E6E;
+}*/
+
+/*input, textarea {
+	background: #FFFFFF url(/_images/bkgrndtextarea.gif) repeat-x;
+	border: 1px solid #FFFFFF;
+	border-top-color: #A3A3A3;
+	border-left-color: #D6D6D6;
+	font: normal 1em/normal "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #6E6E6E;
+}*/
+
+.alerttext {
+	margin-bottom: 1.5em;
+	letter-spacing: -0.05em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color:#F00;
+}
+
+h1, h2, h3 {
+	margin-bottom: 1.5em;
+	letter-spacing: -0.05em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h1 a, h2, h2 a {
+	text-decoration: none;
+	color: #414141;
+}
+
+h1 a:hover, h2 a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #939292;
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+	line-height: 190%;
+	font-size: medium;
+}
+
+ul, ol {
+	margin-left: 3em;
+	font-size: medium;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #346086;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin-right: 20px;
+}
+
+img.right {
+	float: right;
+	margin-right: 20px;
+}
+
+hr {
+	display: none;
+}
+
+/* Header */
+
+#header {
+	width: 85%;
+/*	max-width: 928px; */
+/*  width: 870; */
+/*	margin: 0 auto; */	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 135px;
+}
+
+#header h1, #logo h2 {
+	margin: 0;
+}
+
+#header h1 {
+	float: left;
+	padding-top: 75px;
+}
+
+#header h2 {
+	float: right;
+	padding-top: 95px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#header h2, #logo h2 a {
+	color: #939292;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+/* Navigation Menu */
+
+#navMenu {
+	width: 93%;
+/*	max-width: 1024px; */
+/*  width: 960; */
+/*	margin: 0 auto; */	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 62px;
+	background:#252E3A;
+	border-radius: 15px;
+    list-style:none;
+	padding-left: 10px;
+	/* Bring the nav above everything else--uncomment if needed.
+    position:relative;
+    z-index:5;
+    */
+
+}
+
+/*dropdown menu*/
+ul#menu, ul#menu ul.sub-menu {
+    /* padding:0; */
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom:0;
+	padding-left: 2%; 
+    margin: 0;
+}
+
+ul#menu ul.sub-menu {
+	padding-left: 0;
+	width: 130px; 
+}
+
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+ul#menu li {
+	margin-left: 0px;
+	margin-right: 0px;
+	width:14%;	
+	float:left;
+	padding-bottom:0;
+	padding-right: 1px;
+	padding-left: 1px; 
+}
+ 
+ul#menu ul.sub-menu li {
+	margin-left: 0px;
+	margin-right: 0px;
+	width:100%;
+	padding-right: 0px;
+	padding-left: 0px; 
+
+}
+    
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color:#fff;
+    background:#262C4A;
+	border-radius: 5px;
+    padding: 5px;
+    display:inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	 transition: .3s background-color;
+
+}
+ul#menu li a:hover,  ul#menu li ul.sub-menu li a:hover{
+	color:#FF0;
+	font-style:italic;
+}
+
+ul#menu li ul.sub-menu li a {
+    border-radius: 5px;
+	padding: 3px;
+	font-size: 15px;
+	font-weight: bold;
+	display:block;
+	transition: .3s background-color;
+}
+
+
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 150px;
+}
+ul#menu li:hover {
+	font-style:italic;
+}
+
+ul#menu li:hover ul.sub-menu {
+    display:block;
+	font-style:italic;
+}
+
+/* Banner */
+
+#banner {
+	width: 100%;
+/*	max-width: 1024px; */
+/*  width: 960; */
+/*	margin: 0 auto; */	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+
+}
+#banner img {
+	width:100%; 
+	height:280px;
+}
+.bannerImg {
+	width:100%; 
+	height:250px;
+
+}
+
+
+/* main content */
+
+#main {
+	width: 90%;
+	/*	max-width: 960px; */
+/*  width: 900; */
+/*	margin: 0 auto; */	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	/*	padding: 45px 35px 45px 25px; */
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-right: 1%;
+	padding-left: 1%;
+	background: #FFFFFF url(/images/bkgrndbody.gif) repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #6E6E6E;
+
+}
+#userInfo {
+	width: 80%;
+	float:left;
+}
+#newsLogo {
+	width: 40%;
+	float:right;
+}
+/* Content */
+
+#content {
+	float: left;
+	width: 90%;
+}
+#newshead {
+	margin-top: 5px;
+	margin-bottom:0px;
+	padding-left: 8px;
+	padding-bottom: 0px;
+	float:left;
+	width:99%;
+	
+}
+#news {
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+	margin-right: 20px;
+	margin-left: 0px;
+	list-style-type: square;
+	
+}
+.hrline{
+	color: #003;
+	border: 0;
+	clear: both;
+	display: block;
+	width: 100%;
+	background-color: #003;
+	height: 3px;
+ }
+
+/* Footer */
+.footer {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15;
+	margin-bottom: 0;
+	/*	padding: 45px 35px 45px 25px; */
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-right: 1%;
+	padding-left: 1%;	
+	/*padding: 10px 0; */
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 8pt;
+	color:#D6D6D6;
+/*	background-color:#CCC; */
+}
+.footer img {
+	width: 480px;
+	height: 80px;
+}
+
+#footer {
+	clear: both;
+	width: 88%;
+/*	max-width: 928px; */
+/*  width: 870; */
+	height: 50px;
+/* 	margin: 0 auto; */	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	background: url(/images/whitefrostBotBar.png) no-repeat;
+	background-size:contain;
+}
+
+
+
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+	color: #B4B4B4;
+}
+
+#footer a {
+	color: #B4B4B4;
+}
+
+#footer .course {
+	float: left;
+}
+
+#footer .student {
+	float: right;
+}
+
+.cformLabel{
+	text-align:left;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size:medium;
+	font-weight:bold;
+}
+.cformAlert{
+	text-align:left;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	color:#F00;
+	font-size:medium;
+	font-weight:normal;
+}

@@ -1,0 +1,194 @@
+/*
+*************************************************************
+	CST336 Internet Programming
+	SP-A-2015
+	Instructor: Dr. Su Bude
+	Student: Clarence Mitchell
+*************************************************************
+*/
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color:#FFF;
+	margin: 0;
+	padding: 0;
+	color:#FFF;
+}
+
+
+
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+h1, h2 {
+	text-align:center;
+}
+.centerText {
+	text-align:center;
+	color:black;
+}
+img.left {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	background-color: #6F7D94;
+	border: none;
+}
+a img { 
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;
+	min-width: 780px;
+	background-color: #FFF;
+	margin: 0 auto; /
+}
+
+/* Header */
+
+.header {
+/*	width: 85%; */
+	background-color: #6F7D94;
+/*	max-width: 928px; */
+/*  width: 870; */
+/*	margin: 0 auto; */	
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 135px;
+}
+
+.header h1, #logo h2 {
+	margin: 0;
+}
+
+.header h1 {
+	/*float:left;*/
+	text-align:center;
+	padding-top: 15px;
+	color:#CCCCCC;
+}
+
+.header h2 {
+	float: right;
+	padding-top: 95px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.header h2, #logo h2 a {
+	color: #939292;
+}
+
+.header a {
+	text-decoration: none;
+}
+
+.content {
+	padding: 10px 0;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+}
+table#tableFormat {
+	width:30%; 
+	margin-left:15%; 
+	margin-right:15%;
+	margin: auto; 
+}
+
+
+/* ~~ Footer Area ~~ 
+
+The following selectors are used to style the footer region
+
+*/
+
+.footer {
+	padding: 10px 0;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 8pt;
+	color:#D6D6D6;
+	background-color:#6F7D94;
+}
+.footer img {
+	width: 480px;
+	height: 80px;
+}
+
+
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.loginformfmt { 
+	padding-left: 25px;
+}
+#pwdtextfmt{ 
+	padding-left: 25px;
+	padding-right: 10px;
+	margin-right: 0px;
+	width: 180px;
+}
+#usrtextfmt {
+	padding-left: 25px;
+	padding-right: 10px;
+	margin-right: 0px;
+	width: 180px;
+}
+.entryBoxfmt{ 
+	width: 150px;
+}
+
+.bttnfmt {
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size:medium;
+}
+
+.deniedtxt {
+	color:#FF0000;
+	text-align:center;
+}
+.errMsgTxt {
+	color:#FF0000;
+	text-align:center;
+}
